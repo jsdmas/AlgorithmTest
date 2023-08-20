@@ -9,7 +9,6 @@ function solution(d, budget) {
             result++;
         }else return result;
     }
-    return result;
     // 최대 몇 개의 부서에 물품을 지원 가능한가?
-    
+    return result;
 }
