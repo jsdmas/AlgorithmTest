@@ -1,5 +1,4 @@
 function solution(maps) {
-    
     const yLen = maps.length;
     const xLen = maps[0].length;
     const goalY = yLen - 1;
