@@ -13,21 +13,22 @@ function solution(n, lost, reserve) {
     
     // 체육복을 빌려주기
     for (let i = 0; i < n; i++) {
-        if (students[i] === 0) {
-            if (students[i - 1] === 2) {
+        if (students[i] === 0 && students[i - 1] === 2) {        
+            // 앞의 학생이 체육복이 있는 경우    
                 students[i - 1]--;
                 students[i]++;
-            } else if (students[i + 1] === 2) {
+        } else if (students[i] === 0 && students[i + 1] === 2) {
+            // 뒤의 학생이 체육복이 있는 경우
                 students[i + 1]--;
                 students[i]++;
             }
         }
-    }
+    
     
     // 체육복을 가진 학생 수 세기
     let answer = 0;
-    for (const s of students) {
-        if (s > 0) answer++;
+    for (const student of students) {
+        if (student > 0) answer++;
     }
     
     return answer;
