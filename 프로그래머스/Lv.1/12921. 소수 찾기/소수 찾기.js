@@ -1,4 +1,5 @@
 function solution(n) {
+    // 에라토스테네스의 체
     let answer = 0;
     const arr = new Array(n+1).fill(true); // 초깃값 설정
     const end = Math.sqrt(n) 
