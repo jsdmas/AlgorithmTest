@@ -3,7 +3,8 @@ function solution(nums) {
     let result = 0;
     
     const isPrime = (value) => {
-        for(let i = 2; i < value; i++){
+        // value -> Math.sqrt(value)로 줄이기 가능.
+        for(let i = 2; i <= Math.sqrt(value); i++){
             if(value % i === 0) return false;
         }
         return true;
