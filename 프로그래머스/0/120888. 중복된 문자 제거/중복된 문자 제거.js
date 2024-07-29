@@ -1,3 +1,9 @@
+/**
+function solution(my_string) {
+    return [...new Set(my_string)].join('');
+}
+*/
+
 function solution(my_string) {
     let result = '';
     const map = new Map();
