@@ -1,5 +1,4 @@
 function solution(before, after) {
-    
     const beforeMap = new Map();
     const afterMap = new Map();
     
@@ -19,3 +18,9 @@ function solution(before, after) {
     
     return 1;
 }
+
+/**
+function solution(before, after) {
+    return before.split('').sort().join('') === after.split('').sort().join('') ? 1 : 0;
+}
+*/
